@@ -11,17 +11,47 @@
     align-items: center;
     justify-content: space-between;
     gap: 4em;
-    padding: 4em;
+    padding: 5em;
     background-color: #F9F9F9;
 }
 .app main{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
 }
 .desserts-area{
-    margin-right: 32px;
+    margin-right: 40px;
+}
+.cart-area{
+    width: 100%;
 }
 button{
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .app main{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width: 780px) {
+    .app main{
+        grid-template-columns: 1fr;
+    }
+    .desserts-area{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .app{
+        padding: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .app{
+        padding: 1em;
+    }
 }
